@@ -1,0 +1,30 @@
+language: node_js
+
+node_js:
+- "4"
+
+branches:
+  only:
+  - master
+
+before_script:
+  - npm install -g bower
+  - bower install
+
+before_install:
+- chmod +x ./scripts -R
+
+before_deploy:
+- npm run-script grits
+
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: grits.io
+    local-dir: dist
+    acl: public_read
+    skip_cleanup: true
+    on:
+      repo: Dasix/site-grits.io
+      branch: master

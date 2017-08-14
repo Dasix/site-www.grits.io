@@ -1,0 +1,32 @@
+{
+	"paths": {
+		"root": [
+			"../src"
+		],
+		"static": [
+			"../src/static"
+		],
+		"sassi": [
+			"../src/third-party/template-files/scss/",
+			"../src/third-party/bower/bootstrap-sass/assets/stylesheets",
+			"../src/third-party/bower/validetta/src"
+		],
+		"output": [
+			"../dist"
+		]
+	},
+	"plugins": {
+		"grits-plugin-docs": {
+			"print-header-logo" : "/images/grits-print-logo.png",
+			"print-title-logo" : "/images/grits-title-logo.png",
+			"site-name": "Grits.js",
+			"layoutConfig": {
+				"docs": {
+					"custom-css": [
+						"/css/c2c.css"
+					]
+				}
+			}
+		}
+	}
+}

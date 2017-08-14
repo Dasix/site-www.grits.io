@@ -1,0 +1,43 @@
+{
+  "name": "grits-io",
+  "version": "0.1.0",
+  "description": "The home page and documentation for Grits.js (at www.grits.io)",
+  "license": "MIT",
+  "private": true,
+  "repository": "https://github.com/Dasix/site-www.grits.io",
+  "author": {
+    "name": "Luke Chavers",
+    "email": "luke@dasix.com",
+    "url": "http://www.dasix.com/"
+  },
+  "scripts": {
+    "grits": "scripts/grits-render-once.sh",
+    "live": "scripts/grits-render-live.sh",
+    "live-quiet": "scripts/grits-render-live-quiet.sh",
+    "grits-version": "scripts/grits-version.sh",
+    "grits-config": "scripts/grits-config.sh",
+    "grits-help": "scripts/grits-help.sh",
+    "server-delete": "scripts/server-delete.sh",
+    "server-monitor": "scripts/server-monitor.sh",
+    "server-reload": "scripts/server-reload.sh",
+    "server-restart": "scripts/server-restart.sh",
+    "server-start": "scripts/server-start.sh",
+    "server-status": "scripts/server-status.sh",
+    "server-stop": "scripts/server-stop.sh"
+  },
+  "keywords": [
+    "dasix",
+    "website",
+    "s3",
+    "static",
+    "grits.js",
+    "grits",
+    "grits.io"
+  ],
+  "dependencies": {
+    "grits": "github:dasix/grits#master",
+    "grits-plugin-docs": "github:dasix/grits-plugin-docs#master",
+    "lodash": "^4.8.1",
+    "tipe": "^0.1.12"
+  }
+}

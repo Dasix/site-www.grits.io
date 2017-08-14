@@ -1,0 +1,31 @@
+{
+  "name": "grits-io",
+  "description": "The home page and documentation for Grits.js (at www.grits.io)",
+  "main": "",
+  "private": true,
+  "authors": [
+    "Luke Chavers <luke@dasix.com>",
+    "Rob White IV <rob@dasix.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dasix",
+    "website",
+    "s3",
+    "static",
+    "grits",
+    "grits.js",
+    "grits.io"
+  ],
+  "homepage": "https://www.grits.io/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/third-party/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
